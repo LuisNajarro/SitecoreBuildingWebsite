@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Sitecon.Project.Website</RootNamespace>
+    <AssemblyName>Sitecon.Project.Website</AssemblyName>
+    <SitecoreRoleType>website</SitecoreRoleType>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Views\Website\Layouts\Default.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\lib\flexslider\2.6.1\" />
+    <Folder Include="assets\lib\flexslider\2.6.2\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\Website\Layouts\Default.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
